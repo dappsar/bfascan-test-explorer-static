@@ -1,7 +1,7 @@
 {
-  "name": "ethereum-lite-explorer",
-  "short_name": "ethereum-lite-explorer",
-  "description": "Ethereum Lite Explorer",
+  "name": "bfascan-test-explorer-static",
+  "short_name": "bfascan-test-explorer-static",
+  "description": "BFA Blochain - Test Explorer",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
