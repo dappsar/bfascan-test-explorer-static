@@ -5,7 +5,7 @@
   "description": "Ethereum Lite Explorer",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npm run clean && npm run build-js-prod && npm run install-plugins",
+    "build": "npm run clean && npm run build-js-prod && npm run install-plugins && cp 404.html ./dist/404.html && cp config.json ./dist/config.json",
     "build-dev": "npm run clean && npm run build-js-dev",
     "check-prod-bundle-size": "bundlesize -f \"dist/js/app.bundle.js\" -s 600kB -c none",
     "clean": "rimraf ./dist && npm cache clear --force",
