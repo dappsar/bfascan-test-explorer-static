@@ -3,18 +3,18 @@
   "version": "1.0.0-beta.8",
   "private": true,
   "description": "Ethereum Lite Explorer",
-  "main": "dist/index.js",
+  "main": "docs/index.js",
   "scripts": {
-    "build": "npm run clean && npm run build-js-prod && npm run install-plugins && cp 404.html ./dist/404.html && cp config.json ./dist/config.json",
+    "build": "npm run clean && npm run build-js-prod && npm run install-plugins && cp 404.html ./docs/404.html && cp config.json ./docs/config.json",
     "build-dev": "npm run clean && npm run build-js-dev",
-    "check-prod-bundle-size": "bundlesize -f \"dist/js/app.bundle.js\" -s 600kB -c none",
-    "clean": "rimraf ./dist && npm cache clear --force",
+    "check-prod-bundle-size": "bundlesize -f \"docs/js/app.bundle.js\" -s 600kB -c none",
+    "clean": "rimraf ./docs && npm cache clear --force",
     "build-js-prod": "webpack --config=./webpack.config.prod.js",
     "build-js-dev": "webpack --config=./webpack.config.dev.js",
     "watch": "webpack-runner --config=./webpack.config.dev.js --watch",
     "install": "cd dev && npm install && cd .. || true",
     "start": "cd dev && npm start && cd ..",
-    "deploy-gh": "npm run build && cp 404.html ./dist/404.html && cp config.deploy.json ./dist/config.json && echo 'lite-explorer.aleth.io' > ./dist/CNAME && gh-pages -d dist -m 'gh deploy [ci skip]'",
+    "deploy-gh": "npm run build && cp 404.html ./docs/404.html && cp config.deploy.json ./docs/config.json && echo 'lite-explorer.aleth.io' > ./docs/CNAME && gh-pages -d docs -m 'gh deploy [ci skip]'",
     "install-plugins": "npm i -g @alethio/cms-plugin-tool@^1.0.0-beta.5 && acp install @alethio/explorer-plugin-eth-common@4.0.0 @alethio/explorer-plugin-eth-lite@4.2.0 @alethio/explorer-plugin-eth-memento@2.0.2 @alethio/explorer-plugin-eth-ibft2@2.0.1 @alethio/explorer-plugin-3box@1.1.1"
   },
   "keywords": [

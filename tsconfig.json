@@ -10,7 +10,7 @@
         "noImplicitReturns": true,
         "noUnusedLocals": true,
         "sourceMap": true,
-        "outDir": "./dist",
+        "outDir": "./docs",
         "resolveJsonModule": true,
         "experimentalDecorators": true,
         "removeComments": true,

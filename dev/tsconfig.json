@@ -8,7 +8,7 @@
         "strictFunctionTypes": false,
         "noImplicitReturns": true,
         "sourceMap": true,
-        "outDir": "./dist",
+        "outDir": "./docs",
         "experimentalDecorators": true,
         "removeComments": true,
         "preserveConstEnums": true,
