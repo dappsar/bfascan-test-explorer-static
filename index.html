@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ethereum Lite Blockchain Explorer</title>
+        <title>BFA Blochain (TEST) - Blockchain Explorer</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-        <meta property="og:url" content="https://lite-explorer.aleth.io/">
-        <meta property="og:title" content="Ethereum Lite Blockchain Explorer">
+        <meta property="og:url" content="http://bfascan.000webhostapp.com/">
+        <meta property="og:title" content="BFA Blochain (TEST) - Blockchain Explorer">
         <meta property="og:description" content="Client only, super light weight and entirely open source Ethereum blockchain explorer.">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://lite-explorer.aleth.io/img/og-image.jpg">
+        <meta property="og:image" content="http://bfascan.000webhostapp.com/img/og-image.jpg">
         <meta property="og:image:width" content="1080">
         <meta property="og:image:height" content="600">
 
@@ -21,6 +20,10 @@
         <div id="react-root"></div>
         <!-- Start Single Page Apps for GitHub Pages -->
         <script type="text/javascript">
+            if (location.protocol !== 'http:') {
+                location.replace(`http:${location.href.substring(location.protocol.length)}`);
+            }
+
             // Single Page Apps for GitHub Pages
             // https://github.com/rafrex/spa-github-pages
             // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
